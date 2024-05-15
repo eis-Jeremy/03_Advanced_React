@@ -3,7 +3,7 @@
 // const url = 'https://api.github.com/users';
 
 const FetchData = () => {
-  <h1>Test</h1>
+  return <h1>Test</h1>
 
 //   const [users, setUsers] = useState([]);
 
