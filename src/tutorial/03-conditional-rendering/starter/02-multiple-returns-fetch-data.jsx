@@ -18,9 +18,10 @@ const MultipleReturnsFetchData = () => {
       }
       setIsLoading(false)
     }
+    
+    fetchUser()
   }, [])
 
-  fetchUser()
 
   if (isLoading) {
     return <h2>Loading...</h2>
