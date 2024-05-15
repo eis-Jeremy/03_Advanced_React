@@ -20,6 +20,8 @@ const MultipleReturnsFetchData = () => {
     }
   }, [])
 
+  fetchUser()
+
   if (isLoading) {
     return <h2>Loading...</h2>
   } else if (isError) {
