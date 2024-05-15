@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 
 const MultipleReturnsBasics = () => {
-  return (
-    <>
-      <h2>Hallo Luca!</h2>
-      <p>Diese Webseite ist zwar nicht viel, soll sie aber auch nicht sein.</p>
-      <hr />
-      <p>Sie dient einzig und allein der Zeitverschwendung! ^^'</p>
-      <p>Ich hoffe dir gefällt's! ^^</p>
-    </>
-  )
+  function sayHello(name) {
+    if (name) {
+      return <h2>Hello {name}!</h2>
+    }
+
+    return <h2>Hello there</h2>
+  }
+  
+  sayHello('Jeremy')
 };
 export default MultipleReturnsBasics;
