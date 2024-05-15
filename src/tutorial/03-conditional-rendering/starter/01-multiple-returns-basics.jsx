@@ -10,6 +10,6 @@ const MultipleReturnsBasics = () => {
     return <h2>Hello there</h2>
   }
   
-  return sayHello('Jeremy')
+  return sayHello()
 };
 export default MultipleReturnsBasics;
