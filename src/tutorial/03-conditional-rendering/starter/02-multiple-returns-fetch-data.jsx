@@ -19,6 +19,6 @@ const MultipleReturnsFetchData = () => {
     return fetchUser
   }, [])
 
-  return test();
+  return test
 };
 export default MultipleReturnsFetchData;
