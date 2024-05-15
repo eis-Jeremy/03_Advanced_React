@@ -7,7 +7,7 @@ const MultipleReturnsBasics = () => {
     setTimeout(() => {
       setIsLoading(false);
     }, 3000)
-  })
+  }, [])
 
   if(isLoading)
     return <h2>Loading...</h2>
