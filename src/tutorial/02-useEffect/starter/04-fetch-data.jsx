@@ -2,7 +2,8 @@
 
 // const url = 'https://api.github.com/users';
 
-// const FetchData = () => {
+const FetchData = () => {
+  <h1>Test</h1>
 
 //   const [users, setUsers] = useState([]);
 
@@ -40,5 +41,6 @@
 //       </ul>
 //     </section>
 //   );
-// };
-// export default FetchData;
+};
+export default FetchData;
+
