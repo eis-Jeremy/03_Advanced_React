@@ -2,22 +2,30 @@ import { useEffect, useState } from 'react'
 const url = 'https://api.github.com/users/QuincyLarson'
 
 const MultipleReturnsFetchData = () => {
-  const [user, setUser] = useState(null)
+  
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false)
+  const [user, setUser]  =useState(null)
 
-  const test = useEffect(() => {
+  useEffect(() => {
     async function fetchUser() {
       try {
         const resp = await fetch(url)
-        const user = await resp.json()
-        return <h2>{user}</h2>
+        const user = await resp.json();
+        setUser(user)
       } catch (error) {
-        return <h2>{error}</h2>
+        setIsError(true);
       }
     }
-
-    return fetchUser()
   }, [])
 
-  return test
+  if (isLoading) {
+    return <h2>Loading...</h2>
+  } else if (isError) {
+    return <h2>There was an error! Please try again.</h2>
+  }
+
+  re
+  
 }
 export default MultipleReturnsFetchData
