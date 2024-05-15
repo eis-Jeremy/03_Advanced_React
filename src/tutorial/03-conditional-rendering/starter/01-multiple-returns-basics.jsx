@@ -2,14 +2,16 @@ import { useEffect, useState } from 'react';
 
 const MultipleReturnsBasics = () => {
   
-  function sayHello(name) {
-    if (name) {
-      return <h2>Hello {name}!</h2>
-    }
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000)
+  })
 
-    return <h2>Hello there</h2>
-  }
-  
-  return sayHello()
+  if(isLoading)
+    return <h2>Loading...</h2>
+
+  return <h2>NOT Loading...</h2>
 };
 export default MultipleReturnsBasics;
