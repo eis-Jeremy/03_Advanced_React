@@ -52,11 +52,11 @@ function App() {
 
       {/* <ConditionalRendering04 /> */}
 
-      <ConditionalRendering05 />
+      {/* <ConditionalRendering05 /> */}
 
       {/* <ConditionalRendering06 /> */}
 
-      {/* <ConditionalRendering07 /> */}
+      <ConditionalRendering07 />
 
     </div>
   )
