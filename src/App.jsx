@@ -42,7 +42,7 @@ function App() {
       {
         //NACH CONDITIONAL RENDERING
       }
-      {/* <UseEffect05 /> */}
+      <UseEffect05 />
 
       {/* <ConditionalRendering01 /> */}
 
@@ -56,7 +56,7 @@ function App() {
 
       {/* <ConditionalRendering06 /> */}
 
-      <ConditionalRendering07 />
+      {/* <ConditionalRendering07 /> */}
 
     </div>
   )
